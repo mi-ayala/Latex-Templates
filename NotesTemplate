@@ -1,0 +1,66 @@
+%!TEX TS-program = xelatex
+\documentclass[12pt]{article}
+
+%%% Math packages:
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{dsfont}
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+
+%%% Margins
+\usepackage{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2.7cm}
+\setlength{\parindent}{0bp}
+
+%%% Notebook feeling
+\usepackage{color}
+\definecolor{moleskine}{RGB}{255, 248, 220}
+\pagecolor{moleskine}
+
+%%% Double space
+\usepackage{setspace} \doublespacing
+
+%%% Headers footers
+\usepackage{scrlayer-scrpage}
+\newcommand{\MyName}{Miguel Ayala}
+\rohead{\MyName}
+%\lehead{\today}
+\chead{Solitons in NLS equation}
+%\lehead{Particle simulations plus boundary}
+
+%%% My current favourite font.
+Use XeLatex to compile
+\usepackage{unicode-math}
+\setmathfont{TeX Gyre DejaVu Math}
+\setmainfont{Veranda}
+
+%%$ Math stuff
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\cY}{\mathcal Y}
+\newcommand{\bx}{\bar{x}}
+\newcommand{\ba}{\bar{a}}
+\newcommand{\bb}{\bar{b}}
+\newcommand{\bX}{\bar{X}}
+\newcommand{\tx}{\tilde{x}}
+\newcommand{\bydef}{\,\stackrel{\mbox{\tiny\textnormal{\raisebox{0ex}[0ex][0ex]{def}}}}{=}\,}
+\newcommand{\dagA}{A^\dagger}
+
+\newtheorem{theorem}{Theorem}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\begin{document}
+
+\section{Blueprint}
+
+
+
+
+
+\end{document}
