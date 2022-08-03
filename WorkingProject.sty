@@ -4,40 +4,6 @@
 %%  Miguel Ayala, Aug 2022. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Fonts
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%% Use XeLatex to compile
-\usepackage{fontspec}
-\setmainfont{Veranda}
-
-% %%% Serif math font
-% \usepackage{unicode-math}
-% \setmathfont{TeX Gyre DejaVu Math}
-
-%%% Sans serif Math font
-\usepackage[mathrm=sym]{unicode-math}
-\setmathfont{Fira Math}
-
-%%% Use PdfLatex to compile
-
-%\usepackage[T1]{fontenc}
-
-%%% Latin Modern
-%\usepackage{lmodern}
-
-%%% Palatino font
-%\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
-%\linespread{1.025}              % Palatino leads a little more leading
-
-%%% All sans serif
-% \renewcommand{\familydefault}{\sfdefault} 
-% \usepackage[cm]{sfmath}
-
-% Euler for math and numbers
-%\usepackage[euler-digits,small]{eulervm}
-%\AtBeginDocument{\renewcommand{\hbar}{\hslash}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Bibliography
@@ -50,50 +16,31 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{geometry}
 \usepackage{setspace} \doublespacing
-% \geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2.7cm}
+ %\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2.7cm}
 % \setlength{\parindent}{0bp}
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Other Packages
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{amsmath}
-\usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage{amsfonts}
-\usepackage{mathtools}
-\usepackage{graphicx}
-\usepackage[dvipsnames]{xcolor}
-\usepackage{subcaption}
-\usepackage{listings}
+\usepackage{physics}
+
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+
+ \usepackage{graphicx}
+ \usepackage[dvipsnames]{xcolor}
+ \usepackage{subcaption}
+ \usepackage{listings}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Image Folder
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \graphicspath{{images/}{../images/}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Math Definitions
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[section]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{corollary}{Corollary}[theorem]
-\newtheorem{lemma}[theorem]{Lemma}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\abs}[1]{\left\vert{#1}\right\vert}
-\newcommand{\inner}[1]{\left\langle #1 \right\rangle}
-\newcommand{\norm}[1]{\left\|#1\right\|}
-\newcommand{\brackets}[1]{\left[#1\right]}
-\newcommand{\supnorm}[1]{\norm{#1}_\infty}
-\newcommand{\normt}[1]{\norm{#1}_2}
-\newcommand{\rtwo}{\mathbb{R}^2}
-\newcommand{\rthree}{\mathbb{R}^3}
-\newcommand{\rn}{\mathbb{R}^N}
-\newcommand{\supp}{\operatorname{supp}}
-\DeclareMathOperator*{\dist}{dist}
-\newcommand{\bydef}{\,\stackrel{\mbox{\tiny\textnormal{\raisebox{0ex}[0ex][0ex]{def}}}}{=}\,}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Notebook feeling
@@ -113,7 +60,6 @@
 % \chead{Particles}
 % %\lehead{Particle simulations plus boundary}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  PDF stuff 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -132,3 +78,58 @@
     pdfpagemode=UseOutlines,    
     pdfpagelayout=TwoPageRight
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fonts - Use XeLatex to compile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[mathrm=sym]{unicode-math}
+\setmathfont{Fira Math}
+\setmainfont{Veranda}
+
+% %%% Serif math font
+% \usepackage{unicode-math}
+% \setmathfont{TeX Gyre DejaVu Math}
+
+%%% Sans serif Math font
+% \usepackage[mathrm=sym]{unicode-math}
+
+
+%%% Use PdfLatex to compile
+%\usepackage[T1]{fontenc}
+
+%%% Latin Modern
+%\usepackage{lmodern}
+
+%%% Palatino font
+%\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+%\linespread{1.025}              % Palatino leads a little more leading
+
+%%% All sans serif
+% \renewcommand{\familydefault}{\sfdefault} 
+% \usepackage[cm]{sfmath}
+
+% Euler for math and numbers
+%\usepackage[euler-digits,small]{eulervm}
+%\AtBeginDocument{\renewcommand{\hbar}{\hslash}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Math Definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\cY}{\mathcal Y}
+\newcommand{\bx}{\bar{x}}
+\newcommand{\ba}{\bar{a}}
+\newcommand{\bb}{\bar{b}}
+\newcommand{\bX}{\bar{X}}
+\newcommand{\tx}{\tilde{x}}
+\newcommand{\bydef}{\,\stackrel{\mbox{\tiny\textnormal{\raisebox{0ex}[0ex][0ex]{def}}}}{=}\,}
+\newcommand{\dagA}{A^\dagger}
+\renewcommand{\chaptername}{} %% remove the word \chapter
+\newtheorem{theorem}{Theorem}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
