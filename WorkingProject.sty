@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Template for working projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Miguel Ayala, Aug 2022. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fonts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage[T1]{fontenc}
+% \usepackage[tracking]{microtype}
+
+% \usepackage[sc,osf]{mathpazo}   
+% \linespread{1.025}  % Palatino 
+
+% Euler for math and numbers
+% \usepackage[euler-digits,small]{eulervm}
+% \AtBeginDocument{\renewcommand{\hbar}{\hslash}}
+\usepackage[T1]{fontenc}
+\usepackage[tracking]{microtype}
+
+\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+\linespread{1.025}              % Palatino leads a little more leading
+
+% Euler for math and numbers
+\usepackage[euler-digits,small]{eulervm}
+\AtBeginDocument{\renewcommand{\hbar}{\hslash}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{biblatex}
+\addbibresource{bib.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Margins and spacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\usepackage{setspace} \doublespacing
+% \geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2.7cm}
+% \setlength{\parindent}{0bp}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Other Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{subcaption}
+\usepackage{listings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Image Folder
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{images/}{../images/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Math Definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\abs}[1]{\left\vert{#1}\right\vert}
+\newcommand{\inner}[1]{\left\langle #1 \right\rangle}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\brackets}[1]{\left[#1\right]}
+\newcommand{\supnorm}[1]{\norm{#1}_\infty}
+\newcommand{\normt}[1]{\norm{#1}_2}
+\newcommand{\rtwo}{\mathbb{R}^2}
+\newcommand{\rthree}{\mathbb{R}^3}
+\newcommand{\rn}{\mathbb{R}^N}
+\newcommand{\supp}{\operatorname{supp}}
+\DeclareMathOperator*{\dist}{dist}
+\newcommand{\bydef}{\,\stackrel{\mbox{\tiny\textnormal{\raisebox{0ex}[0ex][0ex]{def}}}}{=}\,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Notebook feeling
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \usepackage{color}
+ \definecolor{moleskine}{RGB}{255, 248, 220}
+ \pagecolor{moleskine}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%% Header
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \usepackage{scrlayer-scrpage}
+% \newcommand{\MyName}{Miguel Ayala}
+% \rohead{\MyName}
+% %\lehead{\today}
+% \chead{Particles}
+% %\lehead{Particle simulations plus boundary}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  PDF stuff 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[]{hyperref}
+\hypersetup{
+    pdftitle={PROJECT NOTES},
+    pdfauthor={Miguel Ayala},
+    pdfsubject={PHD Project},
+    pdfkeywords={Rigorous Numerics, Particle Simulations},
+    bookmarksnumbered=true,     
+    bookmarksopen=true,         
+    bookmarksopenlevel=1,       
+    colorlinks=true,         
+    allcolors=blue,
+    pdfstartview=Fit,           
+    pdfpagemode=UseOutlines,    
+    pdfpagelayout=TwoPageRight
+}
