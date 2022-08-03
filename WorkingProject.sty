@@ -7,24 +7,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Fonts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \usepackage[T1]{fontenc}
-% \usepackage[tracking]{microtype}
+\usepackage{fontspec}
+\setmainfont{Veranda}
 
-% \usepackage[sc,osf]{mathpazo}   
-% \linespread{1.025}  % Palatino 
+%\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
 
-% Euler for math and numbers
-% \usepackage[euler-digits,small]{eulervm}
-% \AtBeginDocument{\renewcommand{\hbar}{\hslash}}
-\usepackage[T1]{fontenc}
-\usepackage[tracking]{microtype}
+%\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+%\linespread{1.025}              % Palatino leads a little more leading
 
-\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
-\linespread{1.025}              % Palatino leads a little more leading
+\renewcommand{\familydefault}{\sfdefault} % Sans Serif
+\usepackage[cm]{sfmath}
 
 % Euler for math and numbers
-\usepackage[euler-digits,small]{eulervm}
-\AtBeginDocument{\renewcommand{\hbar}{\hslash}}
+%\usepackage[euler-digits,small]{eulervm}
+%\AtBeginDocument{\renewcommand{\hbar}{\hslash}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Bibliography
