@@ -7,17 +7,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Fonts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Use XeLatex to compile
 \usepackage{fontspec}
 \setmainfont{Veranda}
 
+% %%% Serif math font
+% \usepackage{unicode-math}
+% \setmathfont{TeX Gyre DejaVu Math}
+
+%%% Sans serif Math font
+\usepackage[mathrm=sym]{unicode-math}
+\setmathfont{Fira Math}
+
+%%% Use PdfLatex to compile
+
 %\usepackage[T1]{fontenc}
+
+%%% Latin Modern
 %\usepackage{lmodern}
 
+%%% Palatino font
 %\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
 %\linespread{1.025}              % Palatino leads a little more leading
 
-\renewcommand{\familydefault}{\sfdefault} % Sans Serif
-\usepackage[cm]{sfmath}
+%%% All sans serif
+% \renewcommand{\familydefault}{\sfdefault} 
+% \usepackage[cm]{sfmath}
 
 % Euler for math and numbers
 %\usepackage[euler-digits,small]{eulervm}
