@@ -1,0 +1,19 @@
+%!TEX TS-program = xelatex
+\documentclass[12pt]{article}
+\usepackage{WorkingProject}
+\begin{document}
+
+
+\input{project}
+\input{implementation}
+\input{meetings}
+
+
+\newpage
+ %%% Add References to the index
+\addcontentsline{toc}{section}{\refname}
+\printbibliography
+%\printbibliography[type=book,title={Books}]
+%\printbibliography[type=misc,title={Notes}]
+
+\end{document}

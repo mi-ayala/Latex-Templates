@@ -1,0 +1,139 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Template for working projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Miguel Ayala, May 2023. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{biblatex}
+\addbibresource{bib.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Margins and spacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\usepackage{setspace} \doublespacing
+ %\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2.7cm}
+\setlength{\parindent}{0bp}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Other Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\usepackage{physics}
+
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+
+ \usepackage{graphicx}
+ \usepackage[dvipsnames]{xcolor}
+ \usepackage{subcaption}
+ \usepackage{listings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Image Folder
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{images/}{../images/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Notebook feeling
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \usepackage{color}
+ \definecolor{moleskine}{RGB}{255, 248, 220}
+ \pagecolor{moleskine}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  PDF stuff 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[]{hyperref}
+\hypersetup{
+    pdftitle={PROJECT NOTES},
+    pdfauthor={Miguel Ayala},
+    pdfsubject={PHD Project},
+    pdfkeywords={Rigorous Numerics, Particle Simulations},
+    bookmarksnumbered=true,     
+    bookmarksopen=true,         
+    bookmarksopenlevel=1,       
+    colorlinks=true,         
+    allcolors=blue,
+    pdfstartview=Fit,           
+    pdfpagemode=UseOutlines,    
+    pdfpagelayout=TwoPageRight
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fonts - Use XeLatex to compile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[mathrm=sym]{unicode-math}
+\setmathfont{Fira Math}
+\setmainfont{Veranda}
+
+% %%% Serif math font
+% \usepackage{unicode-math}
+% \setmathfont{TeX Gyre DejaVu Math}
+
+%%% Sans serif Math font
+% \usepackage[mathrm=sym]{unicode-math}
+
+%%% Use PdfLatex to compile
+%\usepackage[T1]{fontenc}
+
+%%% Latin Modern
+%\usepackage{lmodern}
+
+%%% Palatino font
+%\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+%\linespread{1.025}              % Palatino leads a little more leading
+
+%%% All sans serif
+% \renewcommand{\familydefault}{\sfdefault} 
+% \usepackage[cm]{sfmath}
+
+% Euler for math and numbers
+%\usepackage[euler-digits,small]{eulervm}
+%\AtBeginDocument{\renewcommand{\hbar}{\hslash}}
+
+
+%%%%%%%%%%%%%%%%%%
+%%%% Tables stuff
+%%%%%%%%%%%%%%%%%
+
+\usepackage[
+singlelinecheck=false % <-- important
+]{caption}
+
+\usepackage{booktabs, siunitx}
+\usepackage[svgnames,table]{}
+\usepackage[tableposition=above]{caption}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Math Definitions Comments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\cY}{\mathcal Y}
+\newcommand{\bx}{\bar{x}}
+\newcommand{\ba}{\bar{a}}
+\newcommand{\bb}{\bar{b}}
+\newcommand{\bX}{\bar{X}}
+\newcommand{\tx}{\tilde{x}}
+
+\newcommand{\bydef}
+{\,\stackrel{\mbox{\tiny\textnormal{\raisebox{0ex}[0ex][0ex]{def}}}}{=}\,}
+\newcommand{\dagA}{A^\dagger}
+
+\newtheorem{theorem}{Theorem}
+\theoremstyle{definition}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
